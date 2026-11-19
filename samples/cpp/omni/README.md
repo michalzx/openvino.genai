@@ -62,7 +62,7 @@ This sample takes exactly one audio file. The [Python sample](../../python/omni/
 ## Model Support
 
 Compatible with Qwen3-Omni and LFM3-Omni models exported to OpenVINO format. LFM3-Omni export notes are in
-[Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#lfm3-omni-notes).
+[Supported Models](/docs/supported-models/#lfm3-omni-notes).
 
 To convert a model, install [../../export-requirements.txt](../../export-requirements.txt):
 
@@ -113,5 +113,5 @@ ov::genai::OmniPipeline pipe(models_path, "GPU");
 ## See Also
 
 - [Python Qwen3-Omni chat sample](../../python/omni/)
-- [OmniPipeline C++ API reference](../../../src/cpp/include/openvino/genai/omni/pipeline.hpp)
+- [OmniPipeline C++ API reference](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/cpp/include/openvino/genai/omni/pipeline.hpp)
 - [Qwen3-Omni model documentation](https://github.com/QwenLM/Qwen3-Omni)

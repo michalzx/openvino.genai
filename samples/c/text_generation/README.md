@@ -93,5 +93,5 @@ Basic text generation using a causal language model.
 
 
 ## Support and Contribution
-- For troubleshooting, consult the [OpenVINO documentation](https://docs.openvino.ai).
+- For troubleshooting, consult the [OpenVINO documentation](pathname:///openvino/).
 - To report issues or contribute, visit the [GitHub repository](https://github.com/openvinotoolkit/openvino.genai).

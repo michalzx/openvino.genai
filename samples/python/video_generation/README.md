@@ -58,14 +58,14 @@ pipeline.save_pretrained("ltx_video_ov/FP32")
 optimum-cli export openvino --model diffusers/LTX-2.3-Diffusers --task text-to-video --weight-format int8 --trust-remote-code ltx_2_3_ov/INT8
 ```
 
-LTX-2.3 generates a synchronized audio track, so [`text2video.py`](./text2video.py) also writes `genai_audio.wav`. Its guidance defaults are read from the converted model and need no configuration; see the [generation config](https://docs.openvino.ai/2026/api/genai_api/_autosummary/openvino_genai.VideoGenerationConfig.html) for the `stg_scale` / `modality_scale` knobs that control the extra guidance passes.
+LTX-2.3 generates a synchronized audio track, so [`text2video.py`](./text2video.py) also writes `genai_audio.wav`. Its guidance defaults are read from the converted model and need no configuration; see the [generation config](pathname:///openvino/api/genai_api/_autosummary/openvino_genai.VideoGenerationConfig.html) for the `stg_scale` / `modality_scale` knobs that control the extra guidance passes.
 
 ## Sample Descriptions
 
 ### Common Information
 
-Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/learn-openvino/openvino-samples/get-started-demos.html) to get common information about OpenVINO samples.
-Follow [build instruction](../../../src/docs/BUILD.md) to build GenAI samples.
+Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-openvino/openvino-samples/get-started-demos/) to get common information about OpenVINO samples.
+Follow [build instruction](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/docs/BUILD.md) to build GenAI samples.
 
 GPUs usually provide better performance compared to CPUs. Modify the source code to change the device for inference to the GPU.
 
@@ -198,7 +198,7 @@ The TaylorSeer configuration parameters can be adjusted in the source code:
 - `disable_cache_before_step`: Disable caching before this step for warmup (default: 6)
 - `disable_cache_after_step`: Disable caching after this step (default: -2, meaning 2 steps before the end)
 
-For more details about TaylorSeer, see the [diffusion caching documentation](../../../site/docs/concepts/optimization-techniques/diffusion-caching.md).
+For more details about TaylorSeer, see the [diffusion caching documentation](/docs/concepts/optimization-techniques/diffusion-caching).
 
 ## Troubleshooting
 
@@ -233,5 +233,5 @@ If you encounter the error described in the example when sample is printing outp
 2. Enable UTF-8 mode by setting environment variable `PYTHONIOENCODING="utf8"`.
 
 ## Support and Contribution
-- For troubleshooting, consult the [OpenVINO documentation](https://docs.openvino.ai).
+- For troubleshooting, consult the [OpenVINO documentation](pathname:///openvino/).
 - To report issues or contribute, visit the [GitHub repository](https://github.com/openvinotoolkit/openvino.genai).

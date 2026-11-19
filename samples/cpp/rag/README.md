@@ -31,7 +31,7 @@ optimum-cli export openvino --task text-classification --model cross-encoder/ms-
 
 ## Run
 
-Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/learn-openvino/openvino-samples/get-started-demos.html) to run the sample.
+Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-openvino/openvino-samples/get-started-demos/) to run the sample.
 
 ### 1. Text Embedding Sample (`text_embeddings.cpp`)
 - **Description:**
@@ -40,7 +40,7 @@ Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/lear
   ```sh
   text_embeddings <MODEL_DIR> "Document 1" "Document 2"
   ```
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#embedding-models) for more details.
+Refer to the [Supported Models](/docs/supported-models/#embedding-models) for more details.
 
 ### 2. Text Rerank Sample (`text_rerank.cpp`)
 - **Description:**

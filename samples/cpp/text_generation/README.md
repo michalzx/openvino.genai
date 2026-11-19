@@ -62,7 +62,7 @@ int main() {
 With a compatible OpenVINO build, GenAI attempts paged attention by default and falls back to
 SDPA if conversion fails. An explicit `scheduler_config` requests continuous batching and
 reports conversion errors. Mamba2 and dense Nemotron-H GGUFs currently require SDPA.
-See [Run GGUF models](https://openvinotoolkit.github.io/openvino.genai/docs/guides/gguf) for model format recommendations, examples, and limitations.
+See [Run GGUF models](/docs/guides/gguf) for model format recommendations, examples, and limitations.
 
 > [!NOTE]
 > The `GGUF_READER` property selects which reader converts the file. It defaults to
@@ -71,12 +71,12 @@ See [Run GGUF models](https://openvinotoolkit.github.io/openvino.genai/docs/guid
 
 ## Sample Descriptions
 ### Common information
-Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/learn-openvino/openvino-samples/get-started-demos.html) to get common information about OpenVINO samples.
-Follow [build instruction](../../../src/docs/BUILD.md) to build GenAI samples
+Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-openvino/openvino-samples/get-started-demos/) to get common information about OpenVINO samples.
+Follow [build instruction](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/docs/BUILD.md) to build GenAI samples
 
 GPUs usually provide better performance compared to CPUs. Modify the source code to change the device for inference to the GPU.
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/) for more details.
+Refer to the [Supported Models](/docs/supported-models/) for more details.
 
 Install [../../deployment-requirements.txt](../../deployment-requirements.txt) to run samples
 ```sh
@@ -103,7 +103,7 @@ The following template can be used as a default, but it may not work properly wi
 #### NPU support
 
 NPU device is supported with some limitations. See [NPU inference of
-LLMs](https://docs.openvino.ai/2026/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html) documentation. In particular:
+LLMs](/docs/guides/inference-on-npu) documentation. In particular:
 
 - Models must be exported with symmetric INT4 quantization (`optimum-cli export openvino --weight-format int4 --sym --model <model> <output_folder>`).
   For models with more than 4B parameters, channel wise quantization should be used (`--group-size -1`).
@@ -229,7 +229,7 @@ The sample also demonstrates how to enable user defined encryption for plugin ca
 - **Description:**
 This sample script demonstrates how to benchmark LLMs in OpenVINO GenAI. The script includes functionality for warm-up iterations, generating text, and calculating various performance metrics.
 
-For more information on how performance metrics are calculated please follow [performance-metrics tutorial](../../../src/README.md#performance-metrics).
+For more information on how performance metrics are calculated please follow [performance-metrics tutorial](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/README.md#performance-metrics).
 - **Main Feature:** Benchmark model via GenAI
 - **Run Command:**
   ```bash
@@ -310,5 +310,5 @@ If you encounter the error described in the example when sample is printing outp
 2. Enable UTF-8 mode by setting environment variable `PYTHONIOENCODING="utf8"`.
 
 ## Support and Contribution
-- For troubleshooting, consult the [OpenVINO documentation](https://docs.openvino.ai).
+- For troubleshooting, consult the [OpenVINO documentation](pathname:///openvino/).
 - To report issues or contribute, visit the [GitHub repository](https://github.com/openvinotoolkit/openvino.genai).

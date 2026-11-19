@@ -38,7 +38,7 @@ From the `samples/js` directory, install dependencies (if not already done):
 npm install
 ```
 
-If you use the master branch, you may need to [build openvino-genai-node from source](../../../src/js/BUILD.md) first.
+If you use the master branch, you may need to [build openvino-genai-node from source](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/BUILD.md) first.
 
 Run the sample:
 
@@ -58,7 +58,7 @@ Output:
  How are you doing today?
 ```
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#speech-recognition-models-whisper-based) for more details.
+Refer to the [Supported Models](/docs/supported-models/#speech-recognition-models-whisper-based) for more details.
 
 # ASR pipeline usage
 

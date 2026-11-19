@@ -5,7 +5,7 @@ sidebar_position: 3
 # Continuous Batching
 
 ## Overview
-**Continuous Batching** is an optimization strategy for LLM inference that improves throughput by dynamically composing a batch of independent requests at each model inference step. Instead of handling each request separately from start to finish, the scheduler continuously combines active requests into a single batch. The algorithm evicts a request from the batch when it has produced its final token, allowing other requests to continue or new ones to join. Continuous Batching in OpenVINO GenAI is built on top of the **PagedAttention (PA)** layer. Read more in [src/cpp/include/openvino/genai/continuous_batching_pipeline.hpp](../../../../src/cpp/include/openvino/genai/continuous_batching_pipeline.hpp).
+**Continuous Batching** is an optimization strategy for LLM inference that improves throughput by dynamically composing a batch of independent requests at each model inference step. Instead of handling each request separately from start to finish, the scheduler continuously combines active requests into a single batch. The algorithm evicts a request from the batch when it has produced its final token, allowing other requests to continue or new ones to join. Continuous Batching in OpenVINO GenAI is built on top of the **PagedAttention (PA)** layer. Read more in [src/cpp/include/openvino/genai/continuous_batching_pipeline.hpp](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/cpp/include/openvino/genai/continuous_batching_pipeline.hpp).
 
 ## PagedAttention Backend
 **SDPA (Scaled Dot-Product Attention)** pipelines execute one request (or a fixed static batch) at a time with a contiguous KV cache `[batch, num_heads, seq_len, head_dim]` tensor, which grows as the sequence length increases. **PA** stores K/V in a global pool of fixed-size blocks. Each sequence owns a block table and the attention kernel gathers K/V through that table. New blocks are allocated to a sequence only when the previous one fills up, and blocks are returned to the pool as soon as the sequence finishes. The same pool is shared between all in-flight requests. This makes possible such optimization techniques as multi-request batching, prefix caching, chunked prefill, and cache eviction.
@@ -25,7 +25,7 @@ To avoid fallback, set the backend explicitly by passing `ATTENTION_BACKEND="PA"
 
 Set `ATTENTION_BACKEND="SDPA"` to force SDPA instead of PA.
 
-Scheduling and paged KV cache behavior are configured with `ov::genai::SchedulerConfig` (`openvino_genai.SchedulerConfig`). Please read more about supported parameters and default values in [src/cpp/include/openvino/genai/scheduler_config.hpp](../../../../src/cpp/include/openvino/genai/scheduler_config.hpp).
+Scheduling and paged KV cache behavior are configured with `ov::genai::SchedulerConfig` (`openvino_genai.SchedulerConfig`). Please read more about supported parameters and default values in [src/cpp/include/openvino/genai/scheduler_config.hpp](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/cpp/include/openvino/genai/scheduler_config.hpp).
 
 ## Sample Usage
 
@@ -123,6 +123,6 @@ output is not suppressed for failures that occur before an output commit. Do not
 that a backend failure will set a handle's status to `FAILED`.
 
 ## Tools and samples:
-* [tools/continuous_batching/accuracy/continuous_batching_accuracy.cpp](../../../../tools/continuous_batching/accuracy/continuous_batching_accuracy.cpp) — batched generation with mixed sampling configs.
-* [tools/continuous_batching/benchmark/continuous_batching_benchmark.cpp](../../../../tools/continuous_batching/benchmark/continuous_batching_benchmark.cpp) — throughput benchmark for server-like workloads.
+* [tools/continuous_batching/accuracy/continuous_batching_accuracy.cpp](https://github.com/openvinotoolkit/openvino.genai/blob/master/tools/continuous_batching/accuracy/continuous_batching_accuracy.cpp) — batched generation with mixed sampling configs.
+* [tools/continuous_batching/benchmark/continuous_batching_benchmark.cpp](https://github.com/openvinotoolkit/openvino.genai/blob/master/tools/continuous_batching/benchmark/continuous_batching_benchmark.cpp) — throughput benchmark for server-like workloads.
 * [samples/python/text_generation/benchmark_genai.py](../../../../samples/python/text_generation/benchmark_genai.py) — `LLMPipeline` driven by a custom `SchedulerConfig`.

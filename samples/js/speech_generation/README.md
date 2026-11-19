@@ -45,7 +45,7 @@ From the `samples/js` directory, install dependencies (if not already done):
 npm install
 ```
 
-If you use the master branch, you may need to [build openvino-genai-node from source](../../../src/js/README.md#build-bindings) first.
+If you use the master branch, you may need to [build openvino-genai-node from source](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/README.md#build-bindings) first.
 
 Run the sample:
 
@@ -81,7 +81,7 @@ Throughput              : 123.45 samples/sec.
 Total Generation Time   : 1.234 sec.
 ```
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#speech-generation-models) for more details.
+Refer to the [Supported Models](/docs/supported-models/#speech-generation-models) for more details.
 
 # Text-to-speech pipeline usage
 

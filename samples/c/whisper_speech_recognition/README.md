@@ -143,5 +143,5 @@ The sample provides detailed error messages for common audio file issues:
 
 
 ## Support and Contribution
-- For troubleshooting, consult the [OpenVINO documentation](https://docs.openvino.ai).
+- For troubleshooting, consult the [OpenVINO documentation](pathname:///openvino/).
 - To report issues or contribute, visit the [GitHub repository](https://github.com/openvinotoolkit/openvino.genai).

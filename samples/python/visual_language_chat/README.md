@@ -96,7 +96,7 @@ A model that supports video input is required to run this sample, for example `l
 
 `python video_to_text_chat.py ./LLaVA-NeXT-Video-7B-hf/ sample_demo_1.mp4`
 
-Supported models with video input are listed in [this section](https://openvinotoolkit.github.io/openvino.genai/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
+Supported models with video input are listed in [this section](/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
 
 Discrete GPUs (dGPUs) usually provide better performance compared to CPUs. It is recommended to run larger models on a dGPU with 32GB+ RAM.
 Modify the source code to change the device for inference to the GPU.
@@ -173,7 +173,7 @@ Throughput: 73.97 ± 16.59 tokens/s
 	Throughput: 75.69 ± 19.10 tokens/s
 	```
 
-For more information on how performance metrics are calculated please follow [performance-metrics tutorial](../../../src/README.md#performance-metrics).
+For more information on how performance metrics are calculated please follow [performance-metrics tutorial](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/README.md#performance-metrics).
 
 ### Troubleshooting
 

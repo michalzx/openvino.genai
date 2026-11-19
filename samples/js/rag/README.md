@@ -30,7 +30,7 @@ optimum-cli export openvino --task text-classification --model cross-encoder/ms-
 
 ## Run
 
-Compile GenAI JavaScript bindings archive first using [the instructions](../../../src/js/README.md#build-bindings).
+Compile GenAI JavaScript bindings archive first using [the instructions](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/README.md#build-bindings).
 
 Run `npm install` from the `samples/js` directory and the text samples (1 and 2) will be ready to run. The image and video sample (3) additionally requires building a native OpenCV addon — follow its [environment setup](#3-image-and-video-embedding-sample-image_video_embeddingjs) steps.
 
@@ -43,7 +43,7 @@ OpenCV is an optional dependency: an OpenCV build failure does not prevent insta
   ```sh
   node text_embeddings.js <MODEL_DIR> "Document 1" "Document 2"
   ```
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#embedding-models) for more details.
+Refer to the [Supported Models](/docs/supported-models/#embedding-models) for more details.
 
 ### 2. Text Rerank Sample (`text_rerank.js`)
 - **Description:**
@@ -62,7 +62,7 @@ Unlike the text samples, this one needs the native `@u4/opencv4nodejs` addon, wh
 #### Step 1. Prerequisites
 - Node.js >= 22 and `npm`.
 - A C/C++ toolchain (`gcc`/`g++` or `clang`) and Python 3 — required by `node-gyp` to compile the addon.
-- The OpenVINO GenAI JavaScript bindings, built as described in [the bindings instructions](../../../src/js/README.md#build-bindings).
+- The OpenVINO GenAI JavaScript bindings, built as described in [the bindings instructions](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/README.md#build-bindings).
 
 #### Step 2. Install OpenCV 4.6
 The addon must link against OpenCV **4.6**. Pick one option and export the three location variables; they are reused in Steps 4 and 5.
@@ -117,7 +117,7 @@ node rag/image_video_embedding.js <MODEL_DIR> \
   --videos <VIDEO_PATH_1> [<VIDEO_PATH_2> ...] \
   [--num-video-frames 8] [--device CPU]
 ```
-At least one `--images` or `--videos` input is required. Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#embedding-models) for the list of supported models.
+At least one `--images` or `--videos` input is required. Refer to the [Supported Models](/docs/supported-models/#embedding-models) for the list of supported models.
 
 #### Troubleshooting
 - **`Cannot find module 'nopt'` or other `node-gyp` failures** — the system `node-gyp` is broken. Ensure `samples/js/node_modules/.bin` is first on `PATH` (Step 4) so the locally installed `node-gyp` is used.

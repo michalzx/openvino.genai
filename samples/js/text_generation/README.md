@@ -46,7 +46,7 @@ npm install
 ```
 
 If you use the master branch, you may need to follow
-[this instruction](../../../src/js/README.md#build-bindings)
+[this instruction](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/README.md#build-bindings)
 to build the latest version of `openvino-genai-node` from source first, then install dependencies.
 
 
@@ -113,7 +113,7 @@ Recommended models: Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-7B-Instruct
 - **Description:**
   This sample script demonstrates how to benchmark LLMs in OpenVINO GenAI. The script includes functionality for warm-up iterations, generating text, and calculating various performance metrics.
 
-  For more information on how performance metrics are calculated, please follow the [performance-metrics tutorial](../../../src/README.md#performance-metrics).
+  For more information on how performance metrics are calculated, please follow the [performance-metrics tutorial](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/README.md#performance-metrics).
 - **Main Feature:** Benchmark model via GenAI
 - **Run Command:**
   ```bash

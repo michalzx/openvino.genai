@@ -31,7 +31,7 @@ Then, run the export with Optimum CLI:
 optimum-cli export openvino --model Qwen/Qwen3-VL-2B-Instruct --trust-remote-code Qwen3-VL-2B-Instruct
 ```
 
-Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/learn-openvino/openvino-samples/get-started-demos.html) to run samples.
+Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-openvino/openvino-samples/get-started-demos/) to run samples.
 
 ## Run image-to-text chat sample:
 
@@ -41,7 +41,7 @@ Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/lear
 
 Discrete GPUs (dGPUs) usually provide better performance compared to CPUs. It is recommended to run larger models on a dGPU with 32GB+ RAM. For example, the model `llava-hf/llava-v1.6-mistral-7b-hf` can benefit from being run on a dGPU. Modify the source code to change the device for inference to the `GPU`.
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#vision-language-models-vlms) for more details.
+Refer to the [Supported Models](/docs/supported-models/#vision-language-models-vlms) for more details.
 
 ## Run image-to-text sample with LoRA adapters:
 
@@ -83,7 +83,7 @@ A model that supports video input is required to run this sample, for example `l
 
 `video_to_text_chat ./LLaVA-NeXT-Video-7B-hf/ sample_demo_1.mp4`
 
-Supported models with video input are listed in [this section](https://openvinotoolkit.github.io/openvino.genai/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
+Supported models with video input are listed in [this section](/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
 
 ## Run audio-to-text chat sample:
 
@@ -159,7 +159,7 @@ Throughput: 73.97 ± 16.59 tokens/s
 	Throughput: 75.69 ± 19.10 tokens/s
 	```
 
-For more information on how performance metrics are calculated please follow [performance-metrics tutorial](../../../src/README.md#performance-metrics).
+For more information on how performance metrics are calculated please follow [performance-metrics tutorial](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/README.md#performance-metrics).
 
 ### Troubleshooting
 

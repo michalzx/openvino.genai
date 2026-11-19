@@ -54,7 +54,7 @@ Download the example audio file: https://storage.openvinotoolkit.org/models_cont
 
 ## Run the samples
 
-Follow [Get Started with Samples](https://docs.openvino.ai/2026/get-started/learn-openvino/openvino-samples/get-started-demos.html) to run the samples.
+Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-openvino/openvino-samples/get-started-demos/) to run the samples.
 
 ### Automatic speech recognition
 
@@ -86,7 +86,7 @@ Word timestamps:
 ...
 ```
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#speech-recognition-models) for more details.
+Refer to the [Supported Models](/docs/supported-models/#speech-recognition-models) for more details.
 
 ## ASR pipeline usage
 

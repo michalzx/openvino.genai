@@ -45,7 +45,7 @@ From the `samples/js` directory, install dependencies (if not already done):
 npm install
 ```
 
-If you use the master branch, you may need to [build openvino-genai-node from source](../../../src/js/README.md#build-bindings) first.
+If you use the master branch, you may need to [build openvino-genai-node from source](https://github.com/openvinotoolkit/openvino.genai/blob/master/src/js/README.md#build-bindings) first.
 
 ### Run the text-to-image sample:
 
@@ -118,7 +118,7 @@ Prompt: `cyberpunk cityscape like Tokyo New York with tall buildings at dusk gol
 
    ![](./../../cpp/image_generation/512x512.bmp)
 
-Refer to the [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#image-generation-models) for the list of supported models.
+Refer to the [Supported Models](/docs/supported-models/#image-generation-models) for the list of supported models.
 
 ## Run with a step callback
 

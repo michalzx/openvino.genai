@@ -272,7 +272,7 @@ python qwen3_tts.py base qwen3_tts_base_ov "Hello again." --speaker_embedding_fi
 
 For Qwen3-TTS Base examples above, output is 24 kHz WAV.
 
-Refer to [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#speech-generation-models) for model details.
+Refer to [Supported Models](/docs/supported-models/#speech-generation-models) for model details.
 
 # Text-to-speech API usage
 

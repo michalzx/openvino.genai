@@ -267,7 +267,7 @@ float32; the reference codes carry a small shape header).
 
 For Qwen3-TTS Base examples above, output is 24 kHz WAV.
 
-Refer to [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#speech-generation-models) for model details.
+Refer to [Supported Models](/docs/supported-models/#speech-generation-models) for model details.
 
 # Text-to-speech API usage
 

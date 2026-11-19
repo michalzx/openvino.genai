@@ -22,7 +22,7 @@ pip install "optimum-intel @ git+https://github.com/huggingface/optimum-intel.gi
 ```
 
 Then export a Qwen3-Omni or LFM3-Omni model to OpenVINO format using the Optimum Intel CLI or Python API. LFM3-Omni export
-notes are in [Supported Models](https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/#lfm3-omni-notes).
+notes are in [Supported Models](/docs/supported-models/#lfm3-omni-notes).
 
 Install [deployment-requirements.txt](../../deployment-requirements.txt) via `pip install -r ../../deployment-requirements.txt` to run the sample.
 
@@ -67,7 +67,7 @@ Images, video and audio are loaded once at startup and sent with the first quest
 Every audio you pass gets an index, starting at zero. Write `<ov_genai_audio_N>` in a question to
 put audio N at that exact position, for example `Compare <ov_genai_audio_0> with <ov_genai_audio_1>`
 with two `--audio` files. The full tag rules are in
-[Use Media Tags in Prompt](https://openvinotoolkit.github.io/openvino.genai/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
+[Use Media Tags in Prompt](/docs/use-cases/visual-processing/#use-media-tags-in-prompt).
 
 Omit the tags and the audio is prepended to your text instead. That default is also the layout
 Qwen3-Omni was trained on, so prefer it unless you specifically need the audio elsewhere. Placing
