@@ -86,7 +86,7 @@ Word timestamps:
 ...
 ```
 
-Refer to the [Supported Models](/docs/supported-models/#speech-recognition-models) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#speech-recognition-models) for more details.
 
 ## ASR pipeline usage
 

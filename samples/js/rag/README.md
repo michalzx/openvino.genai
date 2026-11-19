@@ -43,7 +43,7 @@ OpenCV is an optional dependency: an OpenCV build failure does not prevent insta
   ```sh
   node text_embeddings.js <MODEL_DIR> "Document 1" "Document 2"
   ```
-Refer to the [Supported Models](/docs/supported-models/#embedding-models) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#embedding-models) for more details.
 
 ### 2. Text Rerank Sample (`text_rerank.js`)
 - **Description:**
@@ -117,7 +117,7 @@ node rag/image_video_embedding.js <MODEL_DIR> \
   --videos <VIDEO_PATH_1> [<VIDEO_PATH_2> ...] \
   [--num-video-frames 8] [--device CPU]
 ```
-At least one `--images` or `--videos` input is required. Refer to the [Supported Models](/docs/supported-models/#embedding-models) for the list of supported models.
+At least one `--images` or `--videos` input is required. Refer to the [Supported Models](pathname:///genai/docs/supported-models/#embedding-models) for the list of supported models.
 
 #### Troubleshooting
 - **`Cannot find module 'nopt'` or other `node-gyp` failures** — the system `node-gyp` is broken. Ensure `samples/js/node_modules/.bin` is first on `PATH` (Step 4) so the locally installed `node-gyp` is used.

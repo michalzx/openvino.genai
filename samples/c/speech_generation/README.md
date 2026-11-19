@@ -139,4 +139,4 @@ The saved files use simple flat-binary layouts owned by this sample (the speaker
 
 For Qwen3-TTS Base examples above, output is 24 kHz WAV.
 
-Refer to [Supported Models](/docs/supported-models/#speech-generation-models) for model details.
+Refer to [Supported Models](pathname:///genai/docs/supported-models/#speech-generation-models) for model details.

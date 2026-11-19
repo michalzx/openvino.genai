@@ -81,7 +81,7 @@ Throughput              : 123.45 samples/sec.
 Total Generation Time   : 1.234 sec.
 ```
 
-Refer to the [Supported Models](/docs/supported-models/#speech-generation-models) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#speech-generation-models) for more details.
 
 # Text-to-speech pipeline usage
 

@@ -61,7 +61,7 @@ Install [deployment-requirements.txt](../../deployment-requirements.txt) via `pi
   ```sh
   python text_embeddings.py <MODEL_DIR> "Document 1" "Document 2"
   ```
-Refer to the [Supported Models](/docs/supported-models/#embedding-models) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#embedding-models) for more details.
 
 ### 2. Text Rerank Sample (`text_rerank.py`)
 - **Description:**

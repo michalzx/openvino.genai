@@ -66,7 +66,7 @@ To install OpenVINO GenAI for Node.js, refer to the [Install Guide](pathname:///
 
 :::tip Model Preparation
 Before using LLMPipeline, you need to convert your model to OpenVINO IR format.
-See [Model Preparation](/docs/category/model-preparation) for details.
+See [Model Preparation](pathname:///genai/docs/category/model-preparation) for details.
 :::
 
 After installation, you can start using OpenVINO GenAI in your Node.js projects:
@@ -92,9 +92,9 @@ main();
 
 ## Next Steps
 
-- Check out [Code Samples](/docs/samples)
-- Review [Supported Models](/docs/supported-models)
-- Explore [Use Cases](/docs/category/use-cases)
+- Check out [Code Samples](pathname:///genai/docs/samples)
+- Review [Supported Models](pathname:///genai/docs/supported-models)
+- Explore [Use Cases](pathname:///genai/docs/category/use-cases)
 - Browse the [Node.js bindings source](https://github.com/openvinotoolkit/openvino.genai/tree/master/src/js)
 - View the [NPM package](https://www.npmjs.com/package/openvino-genai-node)
 

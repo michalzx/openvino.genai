@@ -62,7 +62,7 @@ This sample takes exactly one audio file. The [Python sample](../../python/omni/
 ## Model Support
 
 Compatible with Qwen3-Omni and LFM3-Omni models exported to OpenVINO format. LFM3-Omni export notes are in
-[Supported Models](/docs/supported-models/#lfm3-omni-notes).
+[Supported Models](pathname:///genai/docs/supported-models/#lfm3-omni-notes).
 
 To convert a model, install [../../export-requirements.txt](../../export-requirements.txt):
 

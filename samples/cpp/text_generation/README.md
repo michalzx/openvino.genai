@@ -62,7 +62,7 @@ int main() {
 With a compatible OpenVINO build, GenAI attempts paged attention by default and falls back to
 SDPA if conversion fails. An explicit `scheduler_config` requests continuous batching and
 reports conversion errors. Mamba2 and dense Nemotron-H GGUFs currently require SDPA.
-See [Run GGUF models](/docs/guides/gguf) for model format recommendations, examples, and limitations.
+See [Run GGUF models](pathname:///genai/docs/guides/gguf) for model format recommendations, examples, and limitations.
 
 > [!NOTE]
 > The `GGUF_READER` property selects which reader converts the file. It defaults to
@@ -76,7 +76,7 @@ Follow [build instruction](https://github.com/openvinotoolkit/openvino.genai/blo
 
 GPUs usually provide better performance compared to CPUs. Modify the source code to change the device for inference to the GPU.
 
-Refer to the [Supported Models](/docs/supported-models/) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/) for more details.
 
 Install [../../deployment-requirements.txt](../../deployment-requirements.txt) to run samples
 ```sh
@@ -103,7 +103,7 @@ The following template can be used as a default, but it may not work properly wi
 #### NPU support
 
 NPU device is supported with some limitations. See [NPU inference of
-LLMs](/docs/guides/inference-on-npu) documentation. In particular:
+LLMs](pathname:///genai/docs/guides/inference-on-npu) documentation. In particular:
 
 - Models must be exported with symmetric INT4 quantization (`optimum-cli export openvino --weight-format int4 --sym --model <model> <output_folder>`).
   For models with more than 4B parameters, channel wise quantization should be used (`--group-size -1`).

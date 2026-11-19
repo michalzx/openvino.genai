@@ -29,5 +29,5 @@ More details about LoRA can be found in HuggingFace [conceptual guide](https://h
 :::
 
 :::tip
-See [LoRA Adapters Guide](/docs/guides/lora-adapters) for an example of using LoRA with OpenVINO GenAI.
+See [LoRA Adapters Guide](pathname:///genai/docs/guides/lora-adapters) for an example of using LoRA with OpenVINO GenAI.
 :::

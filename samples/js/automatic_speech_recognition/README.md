@@ -58,7 +58,7 @@ Output:
  How are you doing today?
 ```
 
-Refer to the [Supported Models](/docs/supported-models/#speech-recognition-models-whisper-based) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#speech-recognition-models-whisper-based) for more details.
 
 # ASR pipeline usage
 

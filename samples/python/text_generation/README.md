@@ -68,7 +68,7 @@ pipe = genai.LLMPipeline("model.gguf", "CPU", GGUF_READER="FRONTEND")
 print(pipe.generate("Explain why the sky is blue.", max_new_tokens=64))
 ```
 
-The frontend supports more architectures and is expected to provide better model quality, but is in preview and may have limitations. It requires a compatible OpenVINO build with the GGUF frontend. See [Run GGUF models](/docs/guides/gguf) for model format recommendations and tokenizer, chat, and streaming examples.
+The frontend supports more architectures and is expected to provide better model quality, but is in preview and may have limitations. It requires a compatible OpenVINO build with the GGUF frontend. See [Run GGUF models](pathname:///genai/docs/guides/gguf) for model format recommendations and tokenizer, chat, and streaming examples.
 
 ## Sample Descriptions
 ### Common information
@@ -77,7 +77,7 @@ Follow [build instruction](https://github.com/openvinotoolkit/openvino.genai/blo
 
 GPUs usually provide better performance compared to CPUs. Modify the source code to change the device for inference to the GPU.
 
-Refer to the [Supported Models](/docs/supported-models/#large-language-models-llms) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#large-language-models-llms) for more details.
 
 Install [../../deployment-requirements.txt](../../deployment-requirements.txt) to run samples
 ```sh
@@ -104,7 +104,7 @@ The following template can be used as a default, but it may not work properly wi
 #### NPU support
 
 NPU device is supported with some limitations. See [NPU inference of
-LLMs](/docs/guides/inference-on-npu) documentation. In particular:
+LLMs](pathname:///genai/docs/guides/inference-on-npu) documentation. In particular:
 
 - Models must be exported with symmetric INT4 quantization (`optimum-cli export openvino --weight-format int4 --sym --model <model> <output_folder>`).
   For models with more than 4B parameters, channel wise quantization should be used (`--group-size -1`).

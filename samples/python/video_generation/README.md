@@ -198,7 +198,7 @@ The TaylorSeer configuration parameters can be adjusted in the source code:
 - `disable_cache_before_step`: Disable caching before this step for warmup (default: 6)
 - `disable_cache_after_step`: Disable caching after this step (default: -2, meaning 2 steps before the end)
 
-For more details about TaylorSeer, see the [diffusion caching documentation](/docs/concepts/optimization-techniques/diffusion-caching).
+For more details about TaylorSeer, see the [diffusion caching documentation](pathname:///genai/docs/concepts/optimization-techniques/diffusion-caching).
 
 ## Troubleshooting
 

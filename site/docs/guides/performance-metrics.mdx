@@ -99,7 +99,7 @@ For beam search scenario, TPOT is calculated based on the effective output token
 
 ## Prefix Cache Hit Tokens
 
-For pipelines that support [prefix caching](/docs/concepts/optimization-techniques/prefix-caching), the prefix cache hit token count reports how many input tokens were reused instead of processed during prefill. The metric is `0` when prefix caching is disabled, no matching prefix is found, or the pipeline does not support prefix-cache restoration.
+For pipelines that support [prefix caching](pathname:///genai/docs/concepts/optimization-techniques/prefix-caching), the prefix cache hit token count reports how many input tokens were reused instead of processed during prefill. The metric is `0` when prefix caching is disabled, no matching prefix is found, or the pipeline does not support prefix-cache restoration.
 
 For an input prompt containing `N` tokens and a matching cached prefix containing `K` tokens, the metric has the following values:
 

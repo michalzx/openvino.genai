@@ -40,7 +40,7 @@ Follow [Get Started with Samples](pathname:///openvino/docs/get-started/learn-op
   ```sh
   text_embeddings <MODEL_DIR> "Document 1" "Document 2"
   ```
-Refer to the [Supported Models](/docs/supported-models/#embedding-models) for more details.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#embedding-models) for more details.
 
 ### 2. Text Rerank Sample (`text_rerank.cpp`)
 - **Description:**

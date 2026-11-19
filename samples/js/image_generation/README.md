@@ -118,7 +118,7 @@ Prompt: `cyberpunk cityscape like Tokyo New York with tall buildings at dusk gol
 
    ![](./../../cpp/image_generation/512x512.bmp)
 
-Refer to the [Supported Models](/docs/supported-models/#image-generation-models) for the list of supported models.
+Refer to the [Supported Models](pathname:///genai/docs/supported-models/#image-generation-models) for the list of supported models.
 
 ## Run with a step callback
 
