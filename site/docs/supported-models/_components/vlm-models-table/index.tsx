@@ -3,7 +3,7 @@ import React from 'react';
 import { BaseModelsTable, LinksCell } from '../base-models-table';
 import { VLM_MODELS, VLMModel } from './models';
 
-const GENAI_CLI_GUIDE = '/docs/guides/model-preparation/convert-to-openvino#genai-cli';
+const GENAI_CLI_GUIDE = 'pathname:///genai/docs/guides/model-preparation/convert-to-openvino/#genai-cli';
 
 const ModelNameCell = ({ name, notesLink, genaiCliOnly }: VLMModel) => (
   <td>
